@@ -1,0 +1,10 @@
+﻿  mg.cpp
+C:\Users\frida\source\repos\mg\mg\mg.cpp(188,30): warning C4244: инициализация: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(302,17): warning C4244: =: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(303,17): warning C4244: =: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(307,21): warning C4244: инициализация: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(308,21): warning C4244: инициализация: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(310,13): warning C4244: =: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(311,13): warning C4244: =: преобразование "double" в "GLfloat", возможна потеря данных
+C:\Users\frida\source\repos\mg\mg\mg.cpp(319,31): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+  mg.vcxproj -> C:\Users\frida\source\repos\mg\Debug\mg.exe
