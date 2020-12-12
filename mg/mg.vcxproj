@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)depends\SOIL\include;$(SolutionDir)depends\GLFW\include;$(SolutionDir)depends;$(SolutionDir)depends\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)depends\SOIL\include;$(SolutionDir)depends\GLFW\include;$(SolutionDir)depends\glad;$(SolutionDir)depends;$(SolutionDir)depends\glad\KHR;$(SolutionDir)depends\glad\include\glad;$(SolutionDir)depends\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)depends\SOIL\include;$(SolutionDir)depends\GLFW\include;$(SolutionDir)depends;$(SolutionDir)depends\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)depends\SOIL\include;$(SolutionDir)depends\GLFW\include;$(SolutionDir)depends\glad;$(SolutionDir)depends;$(SolutionDir)depends\glad\KHR;$(SolutionDir)depends\glad\include\glad;$(SolutionDir)depends\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,6 +145,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\depends\glad\src\glad.c" />
     <ClCompile Include="mg.cpp" />
   </ItemGroup>
   <ItemGroup>
