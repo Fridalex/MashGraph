@@ -98,7 +98,7 @@ int main()
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, 0.0f,  0.0f, -1.0f,
 
         -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 0.0f,  0.0f,  1.0f,
-         0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f,  0.0f,  1.0f, 
+         0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f,  0.0f,  1.0f,
          0.5f,  0.5f,  0.5f,  1.0f, 1.0f, 0.0f,  0.0f,  1.0f,
          0.5f,  0.5f,  0.5f,  1.0f, 1.0f, 0.0f,  0.0f,  1.0f,
         -0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,  0.0f,  1.0f,
@@ -120,7 +120,7 @@ int main()
 
         -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 0.0f, -1.0f,  0.0f,
          0.5f, -0.5f, -0.5f,  1.0f, 1.0f, 0.0f, -1.0f,  0.0f,
-         0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f, -1.0f,  0.0f, 
+         0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f, -1.0f,  0.0f,
          0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f, -1.0f,  0.0f,
         -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 0.0f, -1.0f,  0.0f,
         -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 0.0f, -1.0f,  0.0f,
@@ -129,7 +129,7 @@ int main()
          0.5f,  0.5f, -0.5f,  1.0f, 1.0f,  0.0f,  1.0f,  0.0f,
          0.5f,  0.5f,  0.5f,  1.0f, 0.0f,  0.0f,  1.0f,  0.0f,
          0.5f,  0.5f,  0.5f,  1.0f, 0.0f,  0.0f,  1.0f,  0.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,  0.0f,  1.0f,  0.0f, 
+        -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,  0.0f,  1.0f,  0.0f,
         -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,  0.0f,  1.0f,  0.0f
     };
     //координаты кубиков для остальных сцен
@@ -186,7 +186,7 @@ int main()
         -5.0f, -0.5f,  5.0f,  0.0f, 0.0f,  0.0f,  1.0f,  0.0f,
         -5.0f, -0.5f, -5.0f,  0.0f, 1.0f,  0.0f,  1.0f,  0.0f,
 
-         5.0f, -0.5f,  5.0f,  1.0f, 0.0f,  0.0f,  1.0f,  0.0f, 
+         5.0f, -0.5f,  5.0f,  1.0f, 0.0f,  0.0f,  1.0f,  0.0f,
         -5.0f, -0.5f, -5.0f,  0.0f, 1.0f,  0.0f,  1.0f,  0.0f,
          5.0f, -0.5f, -5.0f,  1.0f, 1.0f,  0.0f,  1.0f,  0.0f,
     };
@@ -253,7 +253,7 @@ int main()
     cubeobv.use();
     cubeobv.setInt("texture1", 0);
 
-   //НАЧАЛО РИСОВАНИЯ
+    //НАЧАЛО РИСОВАНИЯ
     while (!glfwWindowShouldClose(window))
     {
         float currentFrame = glfwGetTime();
@@ -261,7 +261,7 @@ int main()
         lastFrame = currentFrame;
         processInput(window);
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT); 
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
         //НАСТРОЙЙКА ОБВОДКИ
         obvodka.use();
         glm::mat4 model = glm::mat4(1.0f);
@@ -303,9 +303,9 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 36);
         glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
         glStencilMask(0x00);
-       // glDisable(GL_DEPTH_TEST);
+        // glDisable(GL_DEPTH_TEST);
 
-        //ВЫВОД КУБА ДЛЯ НАГЛЯДНОЙ ДЕМОНСТРАЦИИ СВЕТА
+         //ВЫВОД КУБА ДЛЯ НАГЛЯДНОЙ ДЕМОНСТРАЦИИ СВЕТА
         ourShader.use();
         ourShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         ourShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
